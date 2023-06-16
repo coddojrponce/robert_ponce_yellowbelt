@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+<body>
+    <div class="nav">
+        <h1 class="logo">Welcome to Billy's Hero Shop!</h1>
+        <div class="links">
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                
+                <li>
+                    <a href="#">Company</a>
+                </li>
+                
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+            </ul>
+            <div class="cart-container">
+                <img class="cart" src="./images/shopping-cart-icon.jpg" alt="">
+                <p onclick="countUp(this)"id="cart-count">0</p>
+            </div>
+            
+            <div class="search-container">
+                <input id="search-input" class="search-input" type="text">
+                <i onclick="searchFunc()" class="search-button fa fa-search"></i>
+            </div>
+            
+
+
+        </div>
+        
+    </div>
+    <div class="content">
+        <h2>Featured Product</h2>
+
+        
+        <img class="hero-image" src="./images/golden_sword_of_battle.jpg" alt="">
+        <h2>Golden Sword of Battle (aka Scarlet)</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam laborum obcaecati reprehenderit libero quo tempore, provident aliquam laudantium ipsam repudiandae necessitatibus culpa, voluptas similique omnis veritatis aliquid fugit, perspiciatis in?</p>
+        <button onclick="addToCart()"  class="buy-btn">Add to Card</button>
+        <hr>
+        <h2>Other Heroic Products</h2>
+        <div class="card-selection">
+            <div class="card">
+                <img src="./images/root_sword.jpg" alt="">
+                <p>Root Sword</p>
+                <button onclick="addToCart()"  class="buy-btn">Add to Card</button>
+            </div>
+            <div class="card">
+                <img src="./images/root_sword.jpg" alt="">
+                <p>Root Sword</p>
+                <button onclick="addToCart()"  class="buy-btn">Add to Card</button>
+            </div>
+            <div class="card">
+                <img src="./images/root_sword.jpg" alt="">
+                <p>Root Sword</p>
+                <button onclick="addToCart()" class="buy-btn">Add to Card</button>
+            </div>
+            <div class="card">
+                <img src="./images/root_sword.jpg" alt="">
+                <p>Root Sword</p>
+                <button onclick="addToCart()" class="buy-btn">Add to Card</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; Billy The Hero 2023
+    </div>    
+</body>
+</html>
